@@ -1,0 +1,18 @@
+--- Test: empty QUERY
+SEND b'QUERY\n'
+RECV 400 BAD_REQUEST 0
+SEND b'QUERY    \n'
+RECV 400 BAD_REQUEST 0
+--- Test: unknown command, then check connection stays open
+SEND b'FIND a?t\n'
+RECV 400 BAD_REQUEST 0
+SEND b'QUERY -?-\n'
+RECV 200 OK 13
+connection still open: True
+--- Test: lower-case command (commands are case-insensitive)
+SEND b'query zzzzqx\n'
+RECV 404 NOT_FOUND 0
+--- Test: 2000-character line
+SEND b'QUERY aaaaaaaaaaaaaa...(2007 bytes)'
+RECV 400 BAD_REQUEST 0
+server closed connection: True

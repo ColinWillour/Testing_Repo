@@ -1,0 +1,4 @@
+[00:14:32] client A connects to MT server, queries -?-, then stays idle 6 s
+[00:14:33] client B connects while A is still connected
+[00:14:33] client B finished (A still connected)
+[00:14:38] client A finished

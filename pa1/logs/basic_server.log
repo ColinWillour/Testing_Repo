@@ -1,0 +1,36 @@
+Loaded 69903 words from /home/user/Testing_Repo/pa1/wordlist.txt
+Basic WORDQ server listening on port 12000 (Ctrl-C to stop)
+Connected by ('127.0.0.1', 46484)
+('127.0.0.1', 46484)  b'QUERY ??????????\n' -> 200 OK 24071
+Client ('127.0.0.1', 46484) closed the connection
+Finished with ('127.0.0.1', 46484)
+Connected by ('127.0.0.1', 46486)
+('127.0.0.1', 46486)  b'QUERY ?\n' -> 200 OK 69903
+Client ('127.0.0.1', 46486) closed the connection
+Finished with ('127.0.0.1', 46486)
+Connected by ('127.0.0.1', 46498)
+('127.0.0.1', 46498)  b'QUERY ?(a)\n' -> 200 OK 414
+Client ('127.0.0.1', 46498) closed the connection
+Finished with ('127.0.0.1', 46498)
+Connected by ('127.0.0.1', 46506)
+('127.0.0.1', 46506)  b'QUERY -?-\n' -> 200 OK 13
+Client ('127.0.0.1', 46506) closed the connection
+Finished with ('127.0.0.1', 46506)
+Connected by ('127.0.0.1', 46514)
+('127.0.0.1', 46514)  b'QUERY a?t\n' -> 200 OK 4260
+Client ('127.0.0.1', 46514) closed the connection
+Finished with ('127.0.0.1', 46514)
+Connected by ('127.0.0.1', 46530)
+('127.0.0.1', 46530)  b'QUERY zzzzqx\n' -> 404 NOT_FOUND 0
+Client ('127.0.0.1', 46530) closed the connection
+Finished with ('127.0.0.1', 46530)
+Connected by ('127.0.0.1', 46536)
+('127.0.0.1', 46536)  b'QUERY -?-\n' -> 200 OK 13
+('127.0.0.1', 46536)  b'QUIT\n' -> 200 BYE 0
+Finished with ('127.0.0.1', 46536)
+Connected by ('127.0.0.1', 34826)
+('127.0.0.1', 34826)  b'QUERY zzzzqx\n' -> 404 NOT_FOUND 0
+Client ('127.0.0.1', 34826) closed the connection
+Finished with ('127.0.0.1', 34826)
+
+Server shutting down.

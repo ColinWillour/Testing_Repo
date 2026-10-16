@@ -1,0 +1,6 @@
+[00:14:24] client A (mt_client) connects to BASIC server and stays idle 6 s
+[00:14:25] client B (basic_client) starts, query zzzzqx
+[00:14:30] client A finished (sent quit)
+[B] Enter query: Server replied: 404 NOT_FOUND
+[B] Number of matching words: 0
+[00:14:30] client B finished

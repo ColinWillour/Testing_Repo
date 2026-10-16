@@ -1,0 +1,2 @@
+Enter query: Could not connect to 127.0.0.1:12000 ([Errno 111] Connection refused). Is the server running?
+[exit code 1]

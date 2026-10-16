@@ -1,0 +1,20 @@
+$ python3 mt_client.py   (typed: -?- then EOF/Ctrl-D)
+Connected to 127.0.0.1:12000
+Enter query (or 'quit'): Server replied: 200 OK
+Number of matching words: 13
+bric-a-brac
+cap-a-pie
+cock-a-doodle-doo
+cock-a-leekie
+high-muck-a-muck
+love-in-a-mist
+man-on-a-horse
+pied-a-terre
+pit-a-pat
+rat-a-tat-tat
+rub-a-dub
+tete-a-tete
+vis-a-vis
+Enter query (or 'quit'): 
+Server replied: 200 BYE
+[exit code 0]

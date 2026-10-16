@@ -1,0 +1,17 @@
+$ python3 basic_client.py      (typed: -?-)
+Enter query: Server replied: 200 OK
+Number of matching words: 13
+bric-a-brac
+cap-a-pie
+cock-a-doodle-doo
+cock-a-leekie
+high-muck-a-muck
+love-in-a-mist
+man-on-a-horse
+pied-a-terre
+pit-a-pat
+rat-a-tat-tat
+rub-a-dub
+tete-a-tete
+vis-a-vis
+[exit code 0]

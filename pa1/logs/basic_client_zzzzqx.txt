@@ -1,0 +1,4 @@
+$ python3 basic_client.py      (typed: zzzzqx)
+Enter query: Server replied: 404 NOT_FOUND
+Number of matching words: 0
+[exit code 0]
