@@ -49,11 +49,18 @@ def main():
         server_sock.close()
         sys.exit(1)
     server_sock.listen(1)                                    # small backlog
+    # accept() wakes up every second so Ctrl-C is noticed right away (on
+    # Windows a fully blocking accept() ignores Ctrl-C until a client connects).
+    server_sock.settimeout(1.0)
     print("Basic WORDQ server listening on port %d (Ctrl-C to stop)" % port)
 
     try:
         while True:
-            conn, addr = server_sock.accept()                # wait for a client
+            try:
+                conn, addr = server_sock.accept()            # wait for a client
+            except socket.timeout:                           # 1 s tick, no client:
+                continue                                     # check Ctrl-C, retry
+            conn.settimeout(None)                            # client socket: blocking
             print("Connected by", addr)
             # Served directly in this thread: no other client is accepted
             # until this call returns, i.e. until this client is finished.
